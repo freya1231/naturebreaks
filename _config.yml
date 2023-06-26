@@ -37,6 +37,29 @@ plugins:
 sass:
   sass_dir: _sass
 
+# collections
+collections:
+  activities:
+      output: true
+#      permalink: /activities/:path/
+
+# defaults
+defaults:
+  - scope:
+      path: ""
+      type: "activities"
+    values:
+      layout: "activity"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.

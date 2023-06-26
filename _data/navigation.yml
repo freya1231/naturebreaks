@@ -1,6 +1,8 @@
 - name: Home
-  link: /
+  link: /naturebreaks/
 - name: About
-  link: /about.html
+  link: /naturebreaks/about.html
 - name: Blog
-  link: /blog.html
+  link: /naturebreaks/blog.html
+- name: Activities
+  link: /naturebreaks/activities.html
