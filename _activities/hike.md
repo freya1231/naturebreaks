@@ -2,7 +2,7 @@
 short_name: hike
 activity_name: Going hiking
 ---
-# Discover the best outdoor activities easily accessible from London</title>
+# Hiking trips easily accessible from London</title>
 
 ## Introduction to xx near London
 

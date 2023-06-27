@@ -1,7 +1,16 @@
 ---
 layout: default
 ---
-<h1>{{ activity.activity_name }}</h1>
-<p>{{ activity.short_name }}</p>
+<h1>{{ activity.title }}</h1>
+
 
 {{ content }}
+
+
+<h2>Posts</h2>
+<ul>
+  {% assign filtered_posts = site.posts | where: 'activity', page.short_name %}
+  {% for post in filtered_posts %}
+    <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
+  {% endfor %}
+</ul>

@@ -1,8 +1,9 @@
 ---
 short_name: cycle
 activity_name: Going cycling
+Title: Cycling adventures easily accessible from London
 ---
-# Discover the best outdoor activities easily accessible from London</title>
+# Cycling adventures easily accessible from London</title>
 
 ## Introduction to xx near London
 

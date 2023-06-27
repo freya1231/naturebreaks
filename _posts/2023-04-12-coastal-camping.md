@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  coastal camping
+title:  coastal camping near London
 date:   2023-04-12 21:02:14 +0100
-# categories: camping
+activity: camp
 # tags: camping, beach
 ---
-# coastal camping near london
+
 
 SOME TEXT
 

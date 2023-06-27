@@ -2,12 +2,9 @@
 layout: post
 title:  road biking near london
 date:   2023-02-20 21:02:14 +0100
-# categories: cycling
+activity: cycle
 # tags: cycling, countryside
 ---
-# Road biking near London
-
-## Introduction to Country Cycle Trips nearby London
 
 There is no better way to escape the hustle and bustle of London than to explore the beautiful countryside on a cycle trip. From rolling hills and picturesque villages to lush forests and winding rivers, the nearby countryside has countless scenic routes to discover. Whether you're a seasoned cyclist or a beginner looking for a new challenge, country cycle trips offer a fun, healthy and environmentally-friendly way to explore the outdoors. In this article, we'll introduce you to some of the best destinations and routes for country cycling near London, as well as provide tips and advice on planning your trip, choosing the right gear, and staying safe on the road.
 

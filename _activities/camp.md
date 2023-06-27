@@ -1,8 +1,9 @@
 ---
 short_name: camp
-activity_name: Camping
+activity_name: Camping near London
+title: Camping trips near London
 ---
-# Introduction to xx near London</h2>
+# Camping near London</h2>
 
 - x
 - x

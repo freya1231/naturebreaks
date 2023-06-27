@@ -8,8 +8,7 @@ title: Activities
   {% for activity in site.activities %}
     <li>
       <h2><a href="{{ activity.url | relative_url }}">{{ activity.activity_name }}</a></h2>
-      <h3>{{ activity.short_name }}</h3>
-      <p>{{ activity.excerpt | markdownify }}</p>
+      <p>{{ activity.excerpt }}</p>
     </li>
   {% endfor %}
 </ul>

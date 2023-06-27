@@ -1,13 +1,10 @@
 ---
 layout: post
-title:  forest camping
+title:  forest camping near london
 date:   2023-04-13 21:02:14 +0100
-# categories: camping
+activity: camp
 # tags: camping, forest
 ---
-# forest camping near london
-
-SOME TEXT
 
 Camping with your own tent is a wonderful way to reconnect with nature and escape the hustle and bustle of city life. Fortunately, there are several convenient and picturesque camping destinations within two hours of London that offer woodland pitches for a true outdoor experience. Whether you're a seasoned camper or new to the world of camping, this guide will provide useful tips and recommendations for finding the perfect woodland pitch, selecting the essential gear, and enjoying the surrounding area's activities and attractions. So grab your tent, pack your bags, and get ready for an adventure in the great outdoors!
 
