@@ -2,7 +2,7 @@
   link: /naturebreaks/
 - name: About
   link: /naturebreaks/about.html
-- name: Blog
-  link: /naturebreaks/blog.html
 - name: Activities
   link: /naturebreaks/activities.html
+- name: Blog
+  link: /naturebreaks/blog/

@@ -1,0 +1,14 @@
+// define colours
+$footer-bg-color: gray;
+$footer-txt-color: white;
+
+// Define font family and size
+$font-family: 'Arial', sans-serif;
+$font-size: 16px;
+
+footer {
+    display: flex;
+    color: $footer-txt-color;
+    background-color: $footer-bg-color;
+    height: 20px;
+}

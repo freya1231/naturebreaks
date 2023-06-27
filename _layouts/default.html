@@ -3,10 +3,25 @@
   <head>
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/styles.css">
+    {% feed_meta %}
+    {% seo %}
   </head>
   <body>
-    {% include navigation.html %}
-    {{ content }}
+  <div class="wrapper">
+    <header>{% include navigation.html %}</header>
+
+    <div class="page-main">
+      <div class="side_space"><p> </p></div>
+      <div class="main_content">
+        {{ content }}
+      </div>
+      <div class="side_space"><p> </p></div>
+    </div>
+
+    <footer>this is the footer</footer>
+  </div>
+
+
   </body>
-</html>
+</html> 

@@ -1,0 +1,74 @@
+// Define colors
+$nav-bg-color: #5ca08a;       // Navigation background color
+$nav-link-color: #ffffff;     // Navigation link color
+
+// Define font family and size
+$font-family: 'Arial', sans-serif;
+$font-size: 16px;
+
+// Define navigation bar styles
+nav {
+  background-color: $nav-bg-color;
+  display: flex;
+  //justify-content: space-between;
+  align-items: center;
+  // padding: 10px 20px;
+}
+
+nav .menu_item {
+    display: flex;
+    margin-right: 10px;
+    border: 4px white;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+
+    &:last-child {
+    margin-right: 0;
+  }
+}
+
+nav {
+    
+    a {
+        color: $nav-link-color;
+        text-decoration: none;
+        font-family: $font-family;
+         font-size: $font-size;
+    }
+
+    /* unvisited link */
+    a:link {
+        color: $nav-link-color;
+        text-decoration: none;
+        font-family: $font-family;
+        font-size: $font-size;
+    }
+  
+  /* visited link */
+    a:visited {
+        color: $nav-link-color;
+        text-decoration: none;
+        font-family: $font-family;
+        font-size: $font-size;
+    }
+    
+    /* mouse over link */
+    a:hover {
+        color: lightgray;
+        text-decoration: none;
+        font-family: $font-family;
+        font-size: $font-size;
+    }
+    
+    /* selected link */
+    a:active {
+        color: lightgray;
+        text-decoration: none;
+        font-family: $font-family;
+        font-size: $font-size;
+    }
+
+}
+

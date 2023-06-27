@@ -1,0 +1,22 @@
+div.page-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 0;
+  flex-grow: 1;
+}
+
+div .side_space {
+  display: flex;
+  flex: 1;
+  background-color: #d3e0d4;
+  align-items: stretch;
+}
+div .main_content {
+  display: flex;
+  flex: 6;
+  justify-content: center;
+  padding: 10px 20px;
+  background-color: #e8f5e9;
+  flex-direction: column;
+}

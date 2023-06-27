@@ -1,0 +1,55 @@
+nav {
+  background-color: #5ca08a;
+  display: flex;
+  align-items: center;
+}
+
+nav .menu_item {
+  display: flex;
+  margin-right: 10px;
+  border: 4px white;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+nav .menu_item:last-child {
+  margin-right: 0;
+}
+
+nav {
+  /* unvisited link */
+  /* visited link */
+  /* mouse over link */
+  /* selected link */
+}
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+}
+nav a:link {
+  color: #ffffff;
+  text-decoration: none;
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+}
+nav a:visited {
+  color: #ffffff;
+  text-decoration: none;
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+}
+nav a:hover {
+  color: lightgray;
+  text-decoration: none;
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+}
+nav a:active {
+  color: lightgray;
+  text-decoration: none;
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+}

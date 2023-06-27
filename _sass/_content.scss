@@ -1,0 +1,32 @@
+// Define colors
+$bg-color-content: #e8f5e9;       // Pale green background
+$bg-color-side: #d3e0d4;
+$text-color: #333333;     // Dark grey text
+
+div.page-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 0;
+    flex-grow: 1;
+}
+
+div {
+    
+    .side_space {
+        display: flex;
+        flex: 1;
+        background-color: $bg-color-side;
+        align-items: stretch;
+    }
+
+    .main_content {
+        display: flex;
+        flex: 6;
+        justify-content: center;
+        padding: 10px 20px;
+        background-color: $bg-color-content;
+        flex-direction: column;
+    }
+
+}

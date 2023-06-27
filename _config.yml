@@ -32,6 +32,13 @@ github_username:  jekyll
 plugins:
   - jekyll-feed, "~> 0.12"
   - github-pages, '~> 228'
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-paginate
+
+# paginate
+paginate: 3
+paginate_path: "/blog/page:num/"
 
 # Sass
 sass:

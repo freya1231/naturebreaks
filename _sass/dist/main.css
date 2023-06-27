@@ -1,3 +1,45 @@
-.current {
-  color: green;
+body {
+  margin: 0px;
+}
+
+/* grid option
+body {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: auto auto 1fr;
+  margin: 0;
+  background-color: orange;
+  grid-template-columns: 15% 70% 15%;
+}
+
+[id^=row]{ grid-column: 1/-1 }
+
+#row1 { background-color: red; }
+#col1 { background-color: yellow; }
+#col3 { background-color: purple; }
+#row2 { background-color: green; }
+*/
+h1 {
+  font-size: 28px;
+  /* Add any additional styles for h1 */
+}
+
+h2 {
+  font-size: 24px;
+  /* Add any additional styles for h2 */
+}
+
+h3 {
+  font-size: 20px;
+  /* Add any additional styles for h3 */
+}
+
+h4 {
+  font-size: 18px;
+  /* Add any additional styles for h4 */
+}
+
+h5 {
+  font-size: 16px;
+  /* Add any additional styles for h5 */
 }
