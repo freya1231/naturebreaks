@@ -4,12 +4,21 @@ layout: default
 <h1>{{ activity.title }}</h1>
 xx
 
-{{ content }}
-
-<h2>Posts</h2>
+<h2>Sub-topics</h2>
 <ul>
-  {% assign filtered_posts = site.posts | where: activity, page.short_name %}
+    {% assign filtered_posts = site.posts | where: 'activity', page.short_name | where: "sticky", "true" %}
+    {% for post in filtered_posts %}
+      <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+
+
+<h2>Recent Blogs</h2>
+<ul>
+  {% assign filtered_posts = site.posts | where: 'activity', page.short_name | where: "sticky", "false" %}
   {% for post in filtered_posts %}
     <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
   {% endfor %}
 </ul>
+
+{{ content }}
