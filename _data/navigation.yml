@@ -1,8 +1,62 @@
-- name: Home
-  link: /naturebreaks/
-- name: About
-  link: /naturebreaks/about.html
-- name: Activities
-  link: /naturebreaks/activities.html
-- name: Blog
-  link: /naturebreaks/blog/
+#- name: Home
+#  link: /naturebreaks/
+#- name: About
+#  link: /naturebreaks/about.html
+#- name: Activities
+#  link: /naturebreaks/activities.html
+#- name: Blog
+#  link: /naturebreaks/blog/
+
+primary:
+  - name: Home
+    link: /naturebreaks/
+  - name: About
+    link: /naturebreaks/about.html
+  - name: "Activities"
+    link: /naturebreaks/activities.html
+    children:
+      - name: "Camping"
+        link: /naturebreaks/activities/camp.html
+        grandchildren:
+          - name: "wild camping"
+            link: /naturebreaks/2022/05/23/camp-wild-camping.html
+          - name: "glamping"
+            link: /naturebreaks/2022/04/20/camp-glamping.html
+      - name: "Hiking"
+        link: /naturebreaks/activities/hike.html
+  - name: Blog
+    link: /naturebreaks/blog/
+
+#primary:
+# - title: Main Menu
+#   subfolderitems:
+#     - name: Home
+#       link: /naturebreaks/
+#       weight: 2
+#     - name: About
+#       link: /naturebreaks/about.html
+#     - name: Activities
+#       link: /naturebreaks/activities.html
+#       weight: 3
+#       subsubfolderitems:
+#         - name: Camping
+#            link: /naturebreaks/activities/camp.html
+#            weight: 2
+#         - name: Hiking
+#            link: /naturebreaks/activities/hike.html
+#            weight: 2
+#     - name: "Blog"
+#       link: "#"
+#       weight: 3
+#       subsubfolderitems:
+#         - name: "Blog Listing"
+#          link: "/blog/"
+#          weight: 2
+#         - name: "Blog Single"
+ #         link: "/adum-software-industry-how-achive-the-goal/"
+#          weight: 2
+#     - name: "Contact"
+#       link: "/contact/"
+#       weight: 2
+# https://stackoverflow.com/questions/69813830/how-to-create-a-drop-down-menu-in-yml-using-jekyll
+       
