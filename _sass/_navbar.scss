@@ -1,135 +1,111 @@
-// Define colors
-$nav-bg-color: #5ca08a;       // Navigation background color
-$nav-link-color: #ffffff;     // Navigation link color
-
-// Define font family and size
-$font-family: 'Arial', sans-serif;
-$font-size: 16px;
-
-// Define navigation bar styles
-nav {
-  background-color: $nav-bg-color;
-  display: flex;
-  //justify-content: space-between;
-  align-items: center;
-  // padding: 10px 20px;
+header {
+    display: block;
+    margin: 0px;
 }
 
-nav .menu_item {
+#main-nav {
+    margin: 0px;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
     display: flex;
-    margin-right: 10px;
-    border: 4px white;
-    height: 50px;
+    justify-content: space-between;
+} 
+
+#main-nav ul {
+    list-style-type: none;
+    display: flex;
+    flex: 1;
+    width: 100%;
+    align-content: space-between;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    padding: 0px;
+}
+
+#main-nav a {
+    color: white;
+    display: flex;
+    text-decoration: none;
+    transition: background-color 0.4s;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    height: 30px;
     flex: 1;
-
-    &:last-child {
-    margin-right: 0;
-  }
 }
 
-/*.menu_item ul
-{
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-} */
-
-nav .menu_item ul li
-{
-  list-style: none;
-  padding: 4px;
-  position: relative;
-  transition: 0.5s;
-  display: block;
+#main-nav a:hover {
+    background-color: #273a32;
 }
 
-nav .menu_item ul li ul
-{
-  display: none;
+#main-nav li {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    background-color: #5ca08a;
 }
 
-nav .menu_item ul li:hover ul
-{
-  display: block;
-  position: absolute;
-  margin-top: 5px;
-  background: lightgrey;
-  border-radius: 0px;
-  width: 120%;
-  padding-left:2rem;
-  padding-bottom: 2px;
-  box-shadow: 0px 20px 100px 0px rgba(0, 0, 0, 0.5);
+#main-nav li:hover .submenu > li {
+    display: block;
+    top: 0px;
+    left: 0%;
+}
 
-  .menu_grandchildren ul li
-  {
+.submenu ul {
+    display: flex;
+    flex-direction: column;
+    top: 100%;
+    left: 0%;
+    width: 100%;
+}
+
+.submenu li {
     display: none;
-  }
 }
 
-nav .menu_children ul li:hover ul li
-{
-  display: block;
-  position: absolute;
-  margin-top: 5px;
-  background: lightgrey;
-  border-radius: 0px;
-  width: 120%;
-  padding-left:2rem;
-  padding-bottom: 2px;
-  box-shadow: 0px 20px 100px 0px rgba(0, 0, 0, 0.5);
+.submenu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-
-nav {
-    
-    a {
-        color: $nav-link-color;
-        text-decoration: none;
-        font-family: $font-family;
-         font-size: $font-size;
-    }
-
-    /* unvisited link */
-    a:link {
-        color: $nav-link-color;
-        text-decoration: none;
-        font-family: $font-family;
-        font-size: $font-size;
-    }
-  
-  /* visited link */
-    a:visited {
-        color: $nav-link-color;
-        text-decoration: none;
-        font-family: $font-family;
-        font-size: $font-size;
-    }
-    
-    /* mouse over link */
-    a:hover {
-        color: lightgray;
-        text-decoration: none;
-        font-family: $font-family;
-        font-size: $font-size;
-    }
-    
-    /* selected link */
-    a:active {
-        color: lightgray;
-        text-decoration: none;
-        font-family: $font-family;
-        font-size: $font-size;
-    }
-
+.submenu li {
+    position: relative;
 }
 
-// make a navbar with 2 levels of dropdown sub-menus using yml data
-// https://stackoverflow.com/questions/51296001/how-to-make-a-navbar-with-2-levels-of-dropdown-sub-menus-using-yml-data
+.submenu li:hover .submenu-2 > li {
+    display: block;
+    position: absolute;
+}
 
+.submenu-2 ul {
+    display: flex;
+    flex-direction: column;
+    top: 0%;
+    width: 100%;
+}
 
-// https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp
-// https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp
-// https://www.w3schools.com/howto/howto_css_dropdown.asp
+.submenu-2 li {
+    display: none;
+}
+
+.submenu-2 {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+}
+
+.submenu-2 li {
+    position: relative;
+    top: -30px;
+    left: 100%;
+}
+
+.arrow {
+    margin-left: 8px;
+    color: white;
+    font-size: 12px;
+}

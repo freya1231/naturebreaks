@@ -24,6 +24,8 @@ primary:
             link: /naturebreaks/2022/04/20/camp-glamping.html
       - name: "Hiking"
         link: /naturebreaks/activities/hike.html
+      - name: "Cycling"
+        link: /naturebreaks/activities/cycle.html
   - name: Blog
     link: /naturebreaks/blog/
 

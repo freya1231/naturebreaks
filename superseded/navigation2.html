@@ -1,4 +1,4 @@
- <!--   <nav id="main-nav">
+    <nav id="main-nav">
         <ul>
             <li><a href="{{ site.baseurl }}/index.html">Home</a></li>
             <li><a href="{{ site.baseurl }}/about.html">About</a></li>
@@ -20,43 +20,20 @@
             </li>
             <li><a href="{{ site.baseurl }}/contact.html">Contact</a></li>  
         </ul>
-    </nav> -->
-    
-
-<nav id="main-nav">
-    <ul>
-    {% for item in site.data.navigation.primary %}
-        <li><a href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>{{ item.name }}
-            {% if item.children[0] %}
-                <span class="arrow">&#x25BC;</span>
-            {% endif %}
-        </a>
-            {% if item.children[0] %}
-                <ul class="submenu">
-                {% for child in item.children %}
-                    <li><a href="{{ child.link }}" {% if page.url == child.link %}class="current"{% endif %}>{{ child.name }}
-                        {% if child.grandchildren[0] %}
-                            <span class="arrow">&#x25B6;</span>
-                        {% endif %}
-                    </a>
-                        {% if child.grandchildren[0] %}
-                            <ul class="submenu-2">
-                            {% for grandchild in child.grandchildren %}
-                                <li><a href="{{ grandchild.link }}" {% if page.url == grandchild.link %}class="current"{% endif %}>{{ grandchild.name }}</a></li>
-                            {% endfor %}
-                            </ul>
-                        {% endif %}
-                    </li>
-                {% endfor %}
-                </ul>
-            {% endif %}
-        </li>
-    {% endfor %}
-    </ul>
-</nav> 
+    </nav>
 <!--
-<nav id="main-nav">
-    <ul>
+    <nav>
+        {% for item in site.data.navigation %}
+
+        <div class="menu_item">
+            <a href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>{{ item.name }}</a>
+        </div>
+        
+        {% endfor %}
+
+</nav> 
+
+<nav>
     {% for item in site.data.navigation.primary %}
     <div class="menu_item">
         <ul>

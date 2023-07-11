@@ -13,28 +13,15 @@ body {
   margin: 0px;
 }
 
-/* grid option
-body {
-  height: 100vh;
-  display: grid;
-  grid-template-rows: auto auto 1fr;
-  margin: 0;
-  background-color: orange;
-  grid-template-columns: 15% 70% 15%;
+* {
+  font-family: $font-family;
 }
-
-[id^=row]{ grid-column: 1/-1 }
-
-#row1 { background-color: red; }
-#col1 { background-color: yellow; }
-#col3 { background-color: purple; }
-#row2 { background-color: green; }
-*/
 
 // Define the styles
 
 h1 {
   font-size: $heading-1;
+  text-decoration: none;
   /* Add any additional styles for h1 */
 }
 
@@ -58,4 +45,6 @@ h5 {
   /* Add any additional styles for h5 */
 }
 
-
+a {
+  text-decoration: none;
+}
